@@ -1,0 +1,70 @@
+/* styles_dark.css */
+:root {
+    --bg-color: #222;
+    --text-color: #fff;
+    --cell-bg: #333;
+    --cell-hover-bg: #444;
+    --status-color: #fff;
+    --btn-bg: #3498db;
+    --btn-hover-bg: #2980b9;
+}
+
+body {
+    background: linear-gradient(to right, #293247, #182848); /* Gradient background */
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: var(--cell-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: var(--cell-hover-bg);
+}
+
+.status {
+    color: var(--status-color);
+    margin-top: 20px;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--btn-bg);
+    color: #333;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover-bg);
+}
